@@ -1,3 +1,7 @@
+![ox_target-restyle](https://github.com/user-attachments/assets/c3cb8484-e5c5-4131-a047-e0c604ad123d)
+<sub>[Video Preview](https://www.youtube.com/watch?v=-aE-QwGIbPo)</sub>
+
+
 # ox_target
 
 ![](https://img.shields.io/github/downloads/overextended/ox_target/total?logo=github)
