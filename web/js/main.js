@@ -10,15 +10,23 @@ window.addEventListener("message", (event) => {
   switch (event.data.event) {
     case "visible": {
       body.style.visibility = event.data.state ? "visible" : "hidden";
-      return eye.classList.remove("eye-hover");
+      eye.classList.remove("eye-hover");
+      document.querySelector('circle').classList.remove('circle-hover');
+      document.querySelector('circle').style.fill = '';
+      return
     }
 
     case "leftTarget": {
-      return eye.classList.remove("eye-hover");
+      eye.classList.remove("eye-hover");
+      document.querySelector('circle').classList.remove('circle-hover');
+      document.querySelector('circle').style.fill = '';
+      return;
     }
 
     case "setTarget": {
       eye.classList.add("eye-hover");
+      document.querySelector('circle').classList.add('circle-hover');
+      document.querySelector('circle').style.fill = '';
 
       if (event.data.options) {
         for (const type in event.data.options) {

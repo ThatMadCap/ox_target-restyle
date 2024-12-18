@@ -5,7 +5,17 @@
   </head>
   <body>
     <div id="eye">
-      <svg id="eyeSvg" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 12.5c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      <svg id="eyeSvg" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 512 512" width="20px">
+        <defs>
+          <linearGradient id="spinningGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#79B2FF; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#FF4F87; stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <circle cx="256" cy="256" r="220" fill="rgba(23, 23, 23, 0.9)" class="circle" />
+        <path class="eye-fill" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" fill="url(#spinningGradient)" />
+      </svg>
+      <div class="shadow-circle"></div>
     </div>
     <div id="options-wrapper"></div>
     <script defer type="module" src="js/main.js"></script>
